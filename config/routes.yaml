@@ -1,0 +1,40 @@
+index:
+  path: /
+  controller: App\Controller\IndexController::index
+film:
+  path: /film/{id}
+  controller: App\Controller\FilmController::showFilm
+login:
+  path: /login
+  controller:  App\Controller\UserController::login
+category:
+  path: /category/{id}
+  controller:  App\Controller\CategoryController::showFilms
+newCategory:
+    path: /new/category
+    controller:  App\Controller\CategoryController::addCategory
+categoryList:
+  path: /category
+  controller:  App\Controller\CategoryController::showCategory
+user:
+  path: /user/{id}
+  controller: App\Controller\UserController::showUserDetails
+ranking:
+  path: /top/{ranking}
+  controller: App\Controller\CategoryController::showRanking
+categoryFilter:
+  path: /category/filter/{letter}
+  controller: App\Controller\CategoryController::filter
+newUser:
+  path: /new/User
+  controller: App\Controller\UserController::addUser
+comment:
+  path: /comments
+  controller: App\Controlller\CommentController::showComment
+addComment:
+  path: /newComment
+  controller: App\Controller\CommentController::addComment
+logout:
+  path: /logout
+
+
